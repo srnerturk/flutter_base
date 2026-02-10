@@ -1,0 +1,13 @@
+name: example
+description: Example app for mbvn_flutter_base package.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mbvn_flutter_base:
+    path: ../
