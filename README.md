@@ -10,7 +10,7 @@ Add as a git dependency in your app's `pubspec.yaml`:
 dependencies:
   mbvn_flutter_base:
     git:
-      url: https://github.com/your-org/mbvn_flutter_base.git
+      url: https://github.com/srnerturk/flutter_base.git
       ref: v0.1.0  # or branch: main
 ```
 
