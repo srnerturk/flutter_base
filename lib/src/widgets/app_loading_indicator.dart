@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 /// Centered loading indicator. Use in place of content while loading.
+///
+/// Uses [CircularProgressIndicator.adaptive] which renders
+/// [CupertinoActivityIndicator] on Apple platforms and
+/// [CircularProgressIndicator] on others.
 class AppLoadingIndicator extends StatelessWidget {
   const AppLoadingIndicator({super.key, this.size = 32});
 
@@ -12,7 +16,7 @@ class AppLoadingIndicator extends StatelessWidget {
       child: SizedBox(
         width: size,
         height: size,
-        child: const CircularProgressIndicator(),
+        child: const CircularProgressIndicator.adaptive(),
       ),
     );
   }
